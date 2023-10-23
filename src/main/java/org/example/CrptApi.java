@@ -136,13 +136,6 @@ public class CrptApi {
         public String getToken() {
             return token;
         }
-
-        @Override
-        public String toString() {
-            return "DocumentCreationData{" +
-                    "productDocument='" + productDocument +
-                    '}';
-        }
     }
 
     //dependence of the Product Group on Product code
@@ -188,7 +181,7 @@ public class CrptApi {
         }
     }
 
-    public static class DocumentCreationJSONRequestBody {
+    private class DocumentCreationJSONRequestBody {
 
         private String document_format;
         private String product_document;
